@@ -174,6 +174,7 @@ The core logic is implemented within the `Node` class. Each instance of `Node` r
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/ibrahimkhan4real/MCTS-Cartpole_gym.git
+   cd MCTS-Cartpole_gym
 2. **Install Dependencies:**
    ```bash
    pip install gymnasium numpy
