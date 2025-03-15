@@ -20,7 +20,6 @@ This project implements a Monte Carlo Tree Search (MCTS) algorithm designed to s
     - [Action Selection](#action-selection)
 - [Policy and Training Loop](#policy-and-training-loop)
 - [Usage](#usage)
-- [Acknowledgements](#acknowledgements)
 
 ---
 
