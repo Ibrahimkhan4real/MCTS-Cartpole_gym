@@ -19,7 +19,6 @@ This project implements a Monte Carlo Tree Search (MCTS) algorithm designed to s
     - [Tree Exploration](#tree-exploration)
     - [Action Selection](#action-selection)
 - [Policy and Training Loop](#policy-and-training-loop)
-- [Configuration](#configuration)
 - [Usage](#usage)
 - [Conclusion](#conclusion)
 - [License](#license)
@@ -29,7 +28,7 @@ This project implements a Monte Carlo Tree Search (MCTS) algorithm designed to s
 
 ## Overview
 
-This script uses a Monte Carlo Tree Search algorithm to explore and solve a reinforcement learning task. The MCTS approach leverages random rollouts, the UCB1 formula for node selection, and backpropagation of rewards to guide exploration. The implementation is tailored for Gymnasium environments and is fully configurable via an external `config` file.
+This script uses a Monte Carlo Tree Search algorithm to explore and solve a reinforcement learning task. The MCTS approach leverages random rollouts, the UCB1 formula for node selection, and backpropagation of rewards to guide exploration. The implementation is tailored for Gymnasium environment Cartpole.
 
 ---
 
@@ -40,7 +39,7 @@ This script uses a Monte Carlo Tree Search algorithm to explore and solve a rein
 - **Random:** For random selection during exploration and rollouts.
 - **Deepcopy (from `copy`):** To create independent copies of the game state.
 - **Math:** Provides mathematical functions such as `sqrt` and `log`.
-- **Config:** An external configuration file that defines parameters like `GAME_NAME`, exploration constant `c`, number of episodes, and MCTS exploration iterations.
+- **Config:** A configuration file that defines parameters like `GAME_NAME`, exploration constant `c`, number of episodes, and MCTS exploration iterations.
 
 ---
 
@@ -173,13 +172,15 @@ The core logic is implemented within the `Node` class. Each instance of `Node` r
 
 ---
 
-## Configuration
 
-The script uses an external `config.py` file to set important parameters. A sample configuration might look like this:
-
-```python
-# config.py
-GAME_NAME = "CartPole-v1"
-c = 1.414                # Exploration constant for UCB
-MCTS_POLICY_EXPLORE = 50 # Number of MCTS explorations per action selection
-EPISODES = 10            # Number of episodes to run during training
+## Usage
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/ibrahimkhan4real/MCTS-Cartpole_gym.git
+2. **Install Dependencies:**
+   ```bash
+   pip install gymnasium numpy
+3. **Run the python script:**
+   ```bash
+   python main.py
+   
